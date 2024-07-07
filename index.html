@@ -7,19 +7,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
             background-color: #f0f0f0;
         }
-        .container {
+        .tool-container {
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .tool {
             background-color: white;
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            max-width: 400px;
+            width: 100%;
         }
         h1 {
             color: #333;
@@ -47,10 +52,10 @@
             font-weight: bold;
             color: #333;
         }
-		.explanation {
-    text-align: left;
-    margin-top: 2rem;
-    padding-top: 1rem;
+        .explanation {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
     border-top: 1px solid #ccc;
     max-width: 800px;
     margin-left: auto;
@@ -103,12 +108,19 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Convert Words to Numbers</h1>
-        <input type="text" id="inputWord" placeholder="Enter a word">
-        <button onclick="convertToNumber()">Convert</button>
-        <div id="result"></div>
+   </head>
+<body>
+    <div class="tool-container">
+        <div class="tool">
+            <h1>Convert Words to Numbers</h1>
+            <input type="text" id="inputWord" placeholder="Enter a word">
+            <button onclick="convertToNumber()">Convert</button>
+            <div id="result"></div>
+        </div>
     </div>
+
+    <div class="explanation">
+        <h2>Convert Words into Numbers: The Ultimate Guide</h2>
 
     <script>
         function convertToNumber() {
@@ -122,7 +134,7 @@
         }
     </script>
 <div class="explanation">
-    <h2>Convert Words into Numbers: The Ultimate Guide</h2>
+   
     
     <h3>Introduction to our Words to Numbers Converter</h3>
     <p>Welcome to our advanced <strong>Convert Words into Numbers</strong> tool! This powerful and user-friendly converter is designed to transform any word or phrase into a sequence of numbers based on the position of each letter in the alphabet. Whether you're a puzzle enthusiast, a cryptography beginner, or simply curious about the numeric patterns hidden within words, our <em>words to numbers converter</em> is the perfect tool for you.</p>
